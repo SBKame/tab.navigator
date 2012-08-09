@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8" />
+	<title>jQuery Tab Navigator</title>
+	<link rel="stylesheet" href="css/tab.scss" />
+	<link rel="stylesheet" href="css/tab.css" />
+</head>
+<body>
+	<h1>jQuery Tab Navigator</h1>
+	
+	<section id="TextNavigation">
+		<h1>Text Navigation</h1>
+		<div class="tab-contents">
+			<ul class="tab">
+				<li><a href="#content01">Nav01</a></li>
+				<li><a href="#content02">Nav02</a></li>
+				<li><a href="#content03">Nav03</a></li>
+			</ul>
+		
+			<div id="content01">
+				<figure><img src="img/sample01.jpg" alt="" width="540" height="405" /></figure>
+				<p>In text.In text.In text.In text.In text.In text.In text.In text.</p>
+			</div>
+			
+			<div id="content02">
+				<figure><img src="img/sample02.jpg" alt="" width="540" height="405" /></figure>
+				<p>In text.In text.In text.In text.In text.In text.In text.In text.</p>
+			</div>
+			
+			<div id="content03">
+				<figure><img src="img/sample03.jpg" alt="" width="540" height="405" /></figure>
+				<p>In text.In text.In text.In text.In text.In text.In text.In text.</p>
+			</div>
+		</div>
+	</section>
+	
+	<section id="ImageNavigation">
+		<h1>Image Navigation</h1>
+		<div class="tab-contents">
+			<ul class="tab">
+				<li><a href="#content04"><img src="img/btn_nav01.jpg" alt="Nav01" width="150" height="45" /></a></li>
+				<li><a href="#content05"><img src="img/btn_nav02.jpg" alt="Nav02" width="150" height="45" /></a></li>
+				<li><a href="#content06"><img src="img/btn_nav03.jpg" alt="Nav03" width="150" height="45" /></a></li>
+			</ul>
+		
+			<div id="content04">
+				<figure><img src="img/sample01.jpg" alt="" width="540" height="405" class="roll" /></figure>
+				<p>In text.In text.In text.In text.In text.In text.In text.In text.</p>
+			</div>
+			
+			<div id="content05">
+				<figure><img src="img/sample02.jpg" alt="" width="540" height="405" class="roll" /></figure>
+				<p>In text.In text.In text.In text.In text.In text.In text.In text.</p>
+			</div>
+			
+			<div id="content06">
+				<figure><img src="img/sample03.jpg" alt="" width="540" height="405" class="roll" /></figure>
+				<p>In text.In text.In text.In text.In text.In text.In text.In text.</p>
+			</div>
+		</div>
+	</section>
+	
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.tabNavigator.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.tab-contents').jTabNavigator();
+		});
+	</script>
+</body>
+</html>
